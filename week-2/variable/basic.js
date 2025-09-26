@@ -1,24 +1,7 @@
-'use strict';
+const message = "Hallo welcome to javascript";
+message = "Hallo this is local variable";
 
-/* 'let' is used to declare block-scoped variables in JavaScript. */
+console.log(message); //it will throw an error, because we can't change the values of const variable
 
-let message = "Hallo welcome to javascript";
-
-function sayHallo() {
-    let message = "Hallo this is local variable";
-    console.log(message);
-}
-
-sayHallo();
-console.log(message);
-
-const fullname = "Nugraha";
-//fullname = "Budi Santoso"; it will throw an error
-
-function callName(fullname) {
-    console.log(fullname); //the output will be Randi
-    fullname = "Budi Santoso"; //it override the fullname variable
-    console.log(fullname); //the output will be Budi Santoso
-}
-
-callName("Randi");
+const full_name = "Nugraha"; //snake_case
+const lastName = "Nunu"; //camelCase

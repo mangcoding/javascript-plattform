@@ -1,12 +1,11 @@
-// alert("Welcome to simple javascript application");
-let $name = prompt("Enter your name");
-alert("Your name is " + $name);
+const $name = prompt("Enter your Name");
+const $isMarried = confirm("Are you married?");
+const $address = prompt("Enter your Address");
 
-let isStudent = confirm("Are you a student?");
-alert("You are a student: " + isStudent);
+const elName = document.querySelector("#name");
+const elAddress = document.querySelector("#address");
+const elStatus = document.querySelector("#isMarried");
 
-const nameEl = document.querySelector("#name");
-const isStudentEl = document.querySelector("#isStudent");
-
-nameEl.textContent = $name;
-isStudentEl.textContent = isStudent ? "Yes" : "No";
+elName.textContent = $name;
+elAddress.textContent = $address;
+elStatus.textContent = $isMarried ? "Yes" : "No";
