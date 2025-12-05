@@ -13,7 +13,8 @@ student["alternative address"] = "Jl. Raya No. 321, Bandung";
 console.log(student);
 
 //deleting property from the object
-delete student.phone;
+delete student.address;
+delete student["alternative address"];
 console.log(student);
 
 //updating property value

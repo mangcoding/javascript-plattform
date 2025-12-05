@@ -10,7 +10,7 @@ const putri = {
 
 const bayu = Object.assign({},putri);
 bayu.name = "Bayu"
-bayu.address.primary = "Aceh";
+bayu.department.head_name = "Kamdan";
 
-console.log(putri.name);
-console.log(putri.address.primary);
+console.log(bayu.name == putri.name);
+console.log(bayu.department.head_name == putri.department.head_name);

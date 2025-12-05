@@ -6,7 +6,7 @@ const student = {
 }
 
 const putri = student;
-putri.name = "Putri Aulia";
+putri.name = "Putri ABC";
 
 console.log(student == putri);
 console.log(student.name)
